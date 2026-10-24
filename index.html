@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Lost Pages Archive. One page is missing. Find it.">
+  <meta name="archive-checksum" content="cybersurferCTF{404_1s_just_4_numb3r}">
+  <title>The Missing Page · Lost Pages Archive</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <a class="skip-link" href="#terminal">Skip to archive terminal</a>
+
+  <div class="page-shell archive-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span class="brand-copy">
+          <strong>LOST PAGES</strong>
+          <small>ARCHIVE / 404</small>
+        </span>
+      </div>
+      <div class="topbar__meta">
+        <span class="topbar__id">VOL. I — THE UNWRITTEN</span>
+        <span class="status-chip"><span class="status-dot"></span>SIGNAL FRACTURED</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-grid" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow__line"></span>ANOMALY REPORT #404</p>
+
+          <div class="hero-art">
+            <h1 class="hero-title" id="page-title" data-text="404">404</h1>
+            <span class="hero-art__stamp" aria-hidden="true">MISSING</span>
+          </div>
+
+          <p class="hero-kicker"><span>THE</span> MISSING PAGE</p>
+          <p class="hero-story">A page was filed here once. The index remembers its shape, not its name. Somewhere between the shelves, a signal is still repeating.</p>
+
+          <dl class="stat-row">
+            <div class="stat">
+              <dt>INDEXED</dt>
+              <dd>1,048,576</dd>
+            </div>
+            <div class="stat">
+              <dt>MISSING</dt>
+              <dd class="stat--alert">01</dd>
+            </div>
+            <div class="stat">
+              <dt>CORRUPTED</dt>
+              <dd>13%</dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="terminal" id="terminal" aria-labelledby="terminal-title">
+          <div class="terminal__bar">
+            <span class="terminal__lights" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="terminal__title" id="terminal-title">lostpages@archive:~</span>
+            <span class="terminal__tag">SECURE SHELL</span>
+          </div>
+          <div class="terminal__body">
+            <div class="terminal__log" aria-label="Archive daemon log">
+              <p class="log-line"><span class="prompt">$</span>mount /dev/memory</p>
+              <p class="log-line log-line--dim">indexing the unwritten...</p>
+              <p class="log-line log-line--dim">1 anomaly detected</p>
+              <p class="log-line log-line--warn">route signature: 404::ghost</p>
+            </div>
+
+            <button class="search-button" id="find-page" type="button">
+              <span class="search-button__icon" aria-hidden="true">⌕</span>
+              <span class="search-button__label">SEARCH FOR MISSING PAGE</span>
+              <span class="search-button__arrow" aria-hidden="true">↗</span>
+            </button>
+
+            <div class="terminal__response" id="message" role="status" aria-live="polite"></div>
+          </div>
+          <div class="terminal__footer">
+            <span>ARCHIVE DAEMON v1.0</span>
+            <span class="terminal__blink" aria-hidden="true">●</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="fragment-section" aria-labelledby="fragments-title">
+        <div class="section-heading">
+          <h2 id="fragments-title">FRAGMENT INDEX</h2>
+          <p>03 CORRUPTED ENTRIES</p>
+        </div>
+
+        <div class="fragment-grid">
+          <a class="fragment-card fragment-card--echo" href="page_echo.html">
+            <span class="fragment-card__top">
+              <span class="fragment-card__index">0x02</span>
+              <span class="fragment-card__status">MIRAGE</span>
+            </span>
+            <span class="fragment-card__glyph" aria-hidden="true">↺</span>
+            <span class="fragment-card__name">page_echo</span>
+            <span class="fragment-card__meta">mirror residue / unverified <span class="fragment-card__arrow" aria-hidden="true">↗</span></span>
+          </a>
+
+          <a class="fragment-card fragment-card--void" href="page_void.html">
+            <span class="fragment-card__top">
+              <span class="fragment-card__index">0x00</span>
+              <span class="fragment-card__status">NULL</span>
+            </span>
+            <span class="fragment-card__glyph" aria-hidden="true">∅</span>
+            <span class="fragment-card__name">page_void</span>
+            <span class="fragment-card__meta">null sector / no signal <span class="fragment-card__arrow" aria-hidden="true">↗</span></span>
+          </a>
+
+          <a class="fragment-card fragment-card--zero" href="page_zero.html">
+            <span class="fragment-card__top">
+              <span class="fragment-card__index">0x01</span>
+              <span class="fragment-card__status">CHECKSUM</span>
+            </span>
+            <span class="fragment-card__glyph" aria-hidden="true">0</span>
+            <span class="fragment-card__name">page_zero</span>
+            <span class="fragment-card__meta">zero-byte relic / mismatch <span class="fragment-card__arrow" aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>THE LOST PAGES INITIATIVE <span aria-hidden="true">/</span> ARCHIVE 404</p>
+      <p class="site-footer__note">Every page exists somewhere.</p>
+    </footer>
+  </div>
+
+  <script src="js/index.js" defer></script>
+</body>
+</html>

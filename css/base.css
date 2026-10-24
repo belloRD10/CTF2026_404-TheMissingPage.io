@@ -1,0 +1,204 @@
+:root {
+  color-scheme: dark;
+  --bg: #04060c;
+  --bg-deep: #020309;
+  --panel: rgba(8, 13, 24, 0.78);
+  --panel-solid: #08101d;
+  --line: rgba(123, 198, 255, 0.16);
+  --line-strong: rgba(123, 198, 255, 0.34);
+  --ink: #e9f5ff;
+  --muted: #7f90ab;
+  --faint: #45536c;
+  --cyan: #67d4ff;
+  --cyan-soft: rgba(103, 212, 255, 0.12);
+  --lime: #7dffb2;
+  --amber: #ffd166;
+  --rose: #ff6b8a;
+  --violet: #b69bff;
+  --mono: "Cascadia Code", "Consolas", "Courier New", monospace;
+  --sans: "Bahnschrift", "Trebuchet MS", "Segoe UI", sans-serif;
+  --display: "Arial Black", "Impact", "Bahnschrift", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--bg);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100svh;
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--sans);
+  background:
+    radial-gradient(1100px 760px at 12% 6%, rgba(35, 96, 180, 0.22), transparent 62%),
+    radial-gradient(820px 620px at 88% 72%, rgba(20, 185, 145, 0.1), transparent 62%),
+    radial-gradient(700px 520px at 52% 112%, rgba(102, 68, 188, 0.14), transparent 70%),
+    var(--bg);
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(123, 198, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(123, 198, 255, 0.045) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(circle at 50% 26%, #000 0%, transparent 76%);
+  opacity: 0.72;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.035) 0 1px,
+    transparent 1px 4px
+  );
+  mix-blend-mode: soft-light;
+  opacity: 0.16;
+}
+
+::selection {
+  background: var(--cyan);
+  color: var(--bg-deep);
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+}
+
+.page-shell {
+  position: relative;
+  z-index: 1;
+}
+
+.skip-link {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 100;
+  padding: 10px 14px;
+  border: 1px solid var(--cyan);
+  background: var(--bg-deep);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  transform: translateY(-180%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(0.76);
+  }
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes log-in {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0) rotate(1.2deg);
+  }
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

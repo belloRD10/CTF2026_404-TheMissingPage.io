@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A corrupted echo fragment from the Lost Pages Archive.">
+  <meta name="artifact-id" content="page_echo">
+  <meta name="artifact-checksum" content="cybersurferCTF{p4g3_3ch0_n3v3r_d13s}">
+  <title>Echo Fragment · Lost Pages Archive</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/ghost.css">
+</head>
+<body data-theme="echo" data-fragment="echo">
+  <a class="skip-link" href="#artifact">Skip to recovered fragment</a>
+
+  <div class="page-shell ghost-shell">
+    <header class="ghost-header">
+      <a class="back-link" href="index.html"><span aria-hidden="true">←</span>RETURN TO ARCHIVE</a>
+      <span class="status-chip status-chip--accent">
+        <span class="status-dot"></span>
+        SIGNAL UNSTABLE
+      </span>
+    </header>
+
+    <main>
+      <section class="ghost-hero" aria-labelledby="fragment-title">
+        <p class="eyebrow eyebrow--center">
+          <span class="eyebrow__line"></span>
+          CORRUPTED FRAGMENT · 0x02
+          <span class="eyebrow__line"></span>
+        </p>
+        <h1 class="ghost-title" id="fragment-title">ECHO <span>FRAGMENT</span></h1>
+        <p class="ghost-subtitle">A reflection of a page that may never have existed. The signal repeats, but repetition is not proof.</p>
+      </section>
+
+      <section class="artifact" id="artifact" aria-labelledby="artifact-title">
+        <div class="artifact__bar">
+          <span class="artifact__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="artifact__file">echo.fragment</span>
+          <span class="artifact__stamp">MIRAGE</span>
+        </div>
+
+        <div class="artifact__body">
+          <div class="artifact__heading">
+            <div>
+              <p class="artifact__label">RECOVERED FRAGMENT</p>
+              <h2 id="artifact-title">The echo insists it is real.</h2>
+            </div>
+            <span class="artifact__seal" aria-hidden="true">0x02</span>
+          </div>
+
+          <div class="flag-readout" aria-live="polite">
+            <span class="flag-readout__label">FRAGMENT FLAG</span>
+            <span class="flag-readout__value" id="secret"></span>
+            <span class="flag-readout__caret" aria-hidden="true"></span>
+          </div>
+
+          <div class="artifact__meta">
+            <div>
+              <span>ORIGIN</span>
+              <strong>mirror-cache / 0x02</strong>
+            </div>
+            <div>
+              <span>INTEGRITY</span>
+              <strong class="is-warn">41%</strong>
+            </div>
+            <div>
+              <span>CLASSIFICATION</span>
+              <strong>NOT VERIFIED</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="field-note" aria-label="Archive field note">
+        <p class="field-note__label">FIELD NOTE 0x02</p>
+        <p>The archive flags this fragment as a mirage. Its checksum does not match any indexed page.</p>
+      </section>
+    </main>
+
+    <footer class="ghost-footer">
+      <p>THE LOST PAGES INITIATIVE <span aria-hidden="true">/</span> <strong>page_echo</strong></p>
+      <p>Every page exists somewhere.</p>
+    </footer>
+  </div>
+
+  <script src="js/fragments.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A null fragment from the Lost Pages Archive.">
+  <meta name="artifact-id" content="page_void">
+  <meta name="artifact-checksum" content="cybersurferCTF{v01d_w4lk3r_404}">
+  <title>Void Fragment · Lost Pages Archive</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/ghost.css">
+</head>
+<body data-theme="void" data-fragment="void">
+  <a class="skip-link" href="#artifact">Skip to recovered fragment</a>
+
+  <div class="page-shell ghost-shell">
+    <header class="ghost-header">
+      <a class="back-link" href="index.html"><span aria-hidden="true">←</span>RETURN TO ARCHIVE</a>
+      <span class="status-chip status-chip--accent">
+        <span class="status-dot"></span>
+        SIGNAL LOST
+      </span>
+    </header>
+
+    <main>
+      <section class="ghost-hero" aria-labelledby="fragment-title">
+        <p class="eyebrow eyebrow--center">
+          <span class="eyebrow__line"></span>
+          CORRUPTED FRAGMENT · 0x00
+          <span class="eyebrow__line"></span>
+        </p>
+        <h1 class="ghost-title" id="fragment-title">VOID <span>FRAGMENT</span></h1>
+        <p class="ghost-subtitle">Nothing was recovered here. The packet is empty, yet a flag still answers from the dark.</p>
+      </section>
+
+      <section class="artifact" id="artifact" aria-labelledby="artifact-title">
+        <div class="artifact__bar">
+          <span class="artifact__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="artifact__file">void.fragment</span>
+          <span class="artifact__stamp">NULL</span>
+        </div>
+
+        <div class="artifact__body">
+          <div class="artifact__heading">
+            <div>
+              <p class="artifact__label">RECOVERED FRAGMENT</p>
+              <h2 id="artifact-title">The absence has a shape.</h2>
+            </div>
+            <span class="artifact__seal" aria-hidden="true">0x00</span>
+          </div>
+
+          <div class="flag-readout" aria-live="polite">
+            <span class="flag-readout__label">FRAGMENT FLAG</span>
+            <span class="flag-readout__value" id="secret"></span>
+            <span class="flag-readout__caret" aria-hidden="true"></span>
+          </div>
+
+          <div class="artifact__meta">
+            <div>
+              <span>ORIGIN</span>
+              <strong>null-sector / 0x00</strong>
+            </div>
+            <div>
+              <span>INTEGRITY</span>
+              <strong class="is-bad">0%</strong>
+            </div>
+            <div>
+              <span>CLASSIFICATION</span>
+              <strong>UNRESOLVED</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="field-note" aria-label="Archive field note">
+        <p class="field-note__label">FIELD NOTE 0x00</p>
+        <p>A null packet should contain nothing. This one contains a lie.</p>
+      </section>
+    </main>
+
+    <footer class="ghost-footer">
+      <p>THE LOST PAGES INITIATIVE <span aria-hidden="true">/</span> <strong>page_void</strong></p>
+      <p>Every page exists somewhere.</p>
+    </footer>
+  </div>
+
+  <script src="js/fragments.js" defer></script>
+</body>
+</html>
